@@ -328,6 +328,7 @@ label:hover{
   .image-bottom img{
   bottom:24%;
 }
+
 }
 @media only screen and (max-width:600px){
  
@@ -339,10 +340,27 @@ label:hover{
       font-size:15px;
   }
   .form-demo{
-    width:86%;
+    width:100%;
+    /* border: 2px solid rgb(0, 255, 64); */
   }
+
+  #demo .form input, #demo .form select{
+    font-size: 14px;
+  }
+
+  #demo .form #country{
+    width:22%;
+    /* border: 1px solid red; */
+  }
+
+  #demo .form #span input{
+    width:74%;
+    /* border: 1px solid grey; */
+  }
+
   .radio-slot .display-inline{
     width:32%;
+    
   }
   .form-demo h2{
     font-size:22px;
@@ -366,7 +384,7 @@ label:hover{
  
   
   .radio-slot .display-inline{
-    width:45%;
+    width:45%; 
   }
   label{
     padding:5%;
@@ -433,7 +451,7 @@ span.colorblack {
 
 .firstline {
     text-align: center;
-    font-size: 27px;
+    font-size: 24px;
     line-height: 30px;
     font-weight: 500;
     text-transform: capitalize;
