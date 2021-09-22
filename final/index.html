@@ -81,12 +81,12 @@
                      <div class="country">
                         <select onchange="handleSelect(this)" name="country_code" id="country" required>
                         <!-- <option value="Country Code">+91</option> -->
-                        <option value="+91" data-location="India">+91</option>
+                        <option value="+61" data-location="Australia">+61</option>
+                        <option value="+60" data-location="Malaysia" >+60</option> 
                         <option value="+65" data-location="Singapore">+65</option>
                         <option value="+852" data-location="HongKong">+852</option>
-                        <option value="+61" data-location="Australia">+61</option>
-                        <option value="+60" data-location="Malaysia" >+60</option>  
                         <option value="+60" data-location="UAE">+971</option> 
+                        <option value="+91" data-location="India">+91</option>
                                            
 
 
@@ -150,7 +150,7 @@
   <script>
     function handleSelect(data) {
       const selectedValue = data.options[data.selectedIndex].getAttribute('data-location');
-      document.getElementById('country').setAttribute('data-country', selectedValue);
+      document.getElementById('country').setAttribute('data-location', selectedValue);
     }
 
     document.getElementById("scheduleDemo2").onclick = function (){
@@ -161,8 +161,9 @@
       var childName=document.getElementById('fname').value;
       var childGrade=document.getElementById('grade').value;
       var countryCode = document.getElementById('country').value;
-      var countryLocation =document.querySelector("#country").getAttribute('data-country');
-      // console.log(countryLocation);
+     var countryLocation =document.querySelector("#country").getAttribute('data-location');
+     //var countryLocation = "countryCode";
+     console.log(countryLocation);
 
       var inputData= { parentName,countryCode,parentPhone,parentEmail,childName,childGrade,countryLocation} 
        
